@@ -1,10 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
 Hello world
+Branch
+
+<table class="tab">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="person: ${persons}">
+        <td th:text="${person.name}"></td>
+        <td th:text="${person.age}"></td>
+        <td th:text="${person.gender}"></td>
+    </tr>
+    </tbody>
+</table>
+
 </body>
 </html>
