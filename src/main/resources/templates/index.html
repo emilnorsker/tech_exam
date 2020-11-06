@@ -4,10 +4,23 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+<style>
+    /*.input {*/
+    /*     display: inline-block; width: 70px;*/
+    /* }*/
+</style>
 <body>
-Hello world
-Branch
+<h1>Welcome</h1>
 
+<h3>Create new person</h3>
+<form action="/createPerson" method="post">
+    <input type="text" name="name" placeholder="Name" required> <br>
+    <input type="number" name="age" placeholder="Age" required><br>
+    <input type="text" name="gender" placeholder="Gender" required><br>
+    <input type="submit" value="Save">
+</form>
+
+<h4>Current persons in the database</h4>
 <table class="tab">
     <thead>
     <tr>
