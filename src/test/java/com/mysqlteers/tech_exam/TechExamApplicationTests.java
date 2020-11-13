@@ -8,6 +8,7 @@ class TechExamApplicationTests {
 
     @Test
     void contextLoads() {
+
     }
 
 }
