@@ -17,6 +17,16 @@ public class Person {
     public Person() {
     }
 
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", gender='" + gender + '\'' +
+                '}';
+    }
+
     public Long getId() {
         return id;
     }

@@ -44,4 +44,9 @@ public class PersonJPA implements PersonService {
     public Optional<Person> findById(Long aLong) {
         return pr.findById(aLong);
     }
+
+    @Override
+    public Optional<Person> findByName(String name) {
+        return pr.findByName(name);
+    }
 }
