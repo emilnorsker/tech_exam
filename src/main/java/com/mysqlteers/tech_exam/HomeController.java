@@ -30,4 +30,10 @@ public class HomeController {
         personService.save(newPerson);
         return "redirect:/";
     }
+
+    @GetMapping("/sortedList")
+    public String sortedList(Model model) {
+        model.addAttribute("persons", personService.findAllByOrderByName());
+        return "sortedList";
+    }
 }

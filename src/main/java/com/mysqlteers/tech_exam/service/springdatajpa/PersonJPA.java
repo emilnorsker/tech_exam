@@ -6,6 +6,7 @@ import com.mysqlteers.tech_exam.service.PersonService;
 import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 
@@ -48,5 +49,10 @@ public class PersonJPA implements PersonService {
     @Override
     public Optional<Person> findByName(String name) {
         return pr.findByName(name);
+    }
+
+    @Override
+    public List<Person> findAllByOrderByName() {
+        return pr.findAllByOrderByName();
     }
 }
